@@ -1,0 +1,31 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>reCaptcha</title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+ <link rel="stylesheet" href="estilo.css" />
+
+</head>
+
+<body>
+	<nav class="titulo">
+            <h1>S i s t e m a  -  d e  -  T u t o r i a s</h1>
+            <video src="fondo.mp4" autoplay loop muted>
+		</video>
+			
+    <form action="procesa.php" method="POST">
+        <input type="text" placeholder="Nombre" name="nom"> <br /><br />
+
+        <input type="text" placeholder="Apellido" name="ape"> <br /><br />
+
+        <!--reCaptcha-->
+<div class="g-recaptcha" data-sitekey="6LcWa8IUAAAAAHR6yYaKNzdAcfqZKnhdvVmKVemy"></div>
+        <input type="submit" value="Registrar">
+
+    </form>
+</body>
+
+</html>
